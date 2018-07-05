@@ -1,0 +1,14 @@
+<p>User: {{name}} age: {{age}}</p>
+<br/>
+<p>{{23 + 54}}</p>
+<br/>
+<p>Name : {{getName()}} age: {{getAge()}}</p>
+<br/>
+<button [disabled]="isDisabled">My Button</button>
+<br/>
+<button (click)="setEnabled()" (mouseover)="printMouseOver()" >My Second Button</button>
+<br/>
+<!--<input type="text" (keyup)="changeText($event)">-->
+<!--<input type="text" #myInput (keyup)="changeText(myInput.value)">-->
+<input type="text" (input)="changeText($event)">
+<p>{{myText}}</p>
